@@ -531,10 +531,16 @@ section,
   position: relative;
 }
 
+/* Lamp-style gradient text (Skills, Resume, Portfolio, Services, Contact) */
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
+  background: linear-gradient(to bottom right, #cbd5e1, #94a3b8, #64748b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.02em;
 }
 
 .section-title h2:before,

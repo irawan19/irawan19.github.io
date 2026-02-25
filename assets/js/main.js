@@ -56,6 +56,40 @@
   }
 
   /**
+   * Welcome greeting sound - plays once on first interaction (browser blocks autoplay)
+   */
+  (function welcomeSound() {
+    var STORAGE_KEY = 'welcomeSoundPlayed';
+    if (localStorage.getItem(STORAGE_KEY)) return;
+
+    var base = window.location.href.split('#')[0];
+    base = base.substring(0, base.lastIndexOf('/') + 1);
+    var audio = new Audio(base + 'assets/sound/welcome.mp3');
+    audio.volume = 0.6;
+    var played = false;
+
+    function playWelcome() {
+      if (played || localStorage.getItem(STORAGE_KEY)) return;
+      played = true;
+      audio.play().then(function() {
+        localStorage.setItem(STORAGE_KEY, '1');
+      }).catch(function() {
+        played = false;
+      });
+    }
+
+    function onFirstInteraction() {
+      playWelcome();
+    }
+
+    window.addEventListener('load', function() {
+      document.body.addEventListener('click', onFirstInteraction, { once: true });
+      document.body.addEventListener('touchstart', onFirstInteraction, { once: true });
+      document.body.addEventListener('keydown', onFirstInteraction, { once: true });
+    });
+  })();
+
+  /**
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
