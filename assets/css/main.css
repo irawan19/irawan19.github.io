@@ -531,12 +531,12 @@ section,
   position: relative;
 }
 
-/* Lamp-style gradient text (Skills, Resume, Portfolio, Services, Contact) */
+/* Lamp-style gradient text (Skills, Resume, Portfolio, Services, Contact) - cyan neon */
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
-  background: linear-gradient(to bottom right, #cbd5e1, #94a3b8, #64748b);
+  background: linear-gradient(to bottom right, #00FFFF, #00E6FF, #00C6FF);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -645,8 +645,11 @@ section,
 .hero .hero-text h2 {
   font-size: 32px;
   font-weight: 600;
-  color: var(--heading-color);
   margin-bottom: 10px;
+  background: linear-gradient(to bottom right, #00FFFF, #00E6FF, #00C6FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero .hero-text .lead {

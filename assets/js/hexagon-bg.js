@@ -15,7 +15,8 @@
   var HEX_GAP = 5;
   var PULSE_SPEED = 0.002;
   var MOUSE_RADIUS = 250;
-  var HEX_BASE_COLOR_RGB = '255, 255, 255';
+  var HEX_WHITE_RGB = '255, 255, 255';
+  var HEX_CYAN_RGB = '0, 255, 255'; /* #00FFFF */
 
   function drawHexagon(x, y, radius, color, lineWidth) {
     ctx.beginPath();
@@ -70,7 +71,8 @@
       var finalIntensity = Math.min(1, basePulse * 0.5 + mouseEffect * 0.8);
       var alpha = 0.04 + finalIntensity * 0.28;
       var lineWidth = 0.25 + finalIntensity * 0.9;
-      var color = 'rgba(' + HEX_BASE_COLOR_RGB + ', ' + alpha + ')';
+      var rgb = mouseEffect > 0.15 ? HEX_CYAN_RGB : HEX_WHITE_RGB;
+      var color = 'rgba(' + rgb + ', ' + alpha + ')';
       drawHexagon(hex.x, hex.y, HEX_RADIUS, color, lineWidth);
     });
 
