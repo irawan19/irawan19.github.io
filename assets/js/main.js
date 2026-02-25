@@ -168,6 +168,91 @@
   });
 
   /**
+   * Portfolio pagination (4 per page) and filter
+   */
+  (function portfolioPagination() {
+    const listEl = document.getElementById('portfolio-list');
+    const paginationEl = document.getElementById('portfolio-pagination');
+    const filtersEl = document.getElementById('portfolio-filters');
+    if (!listEl || !paginationEl) return;
+
+    const perPage = 4;
+    let currentFilter = '*';
+    let currentPage = 1;
+
+    function getVisibleItems() {
+      const items = Array.from(listEl.querySelectorAll('.portfolio-item'));
+      if (currentFilter === '*') return items;
+      return items.filter(function(el) {
+        return el.classList.contains(currentFilter.replace('.', ''));
+      });
+    }
+
+    function render() {
+      const visible = getVisibleItems();
+      const totalPages = Math.max(1, Math.ceil(visible.length / perPage));
+      currentPage = Math.min(currentPage, totalPages);
+      const start = (currentPage - 1) * perPage;
+      const slice = visible.slice(start, start + perPage);
+
+      listEl.querySelectorAll('.portfolio-item').forEach(function(el) {
+        el.style.display = slice.indexOf(el) !== -1 ? '' : 'none';
+      });
+
+      paginationEl.innerHTML = '';
+      if (totalPages <= 1) return;
+
+      const ul = document.createElement('ul');
+      ul.className = 'pagination justify-content-center';
+
+      const prevLi = document.createElement('li');
+      prevLi.className = 'page-item' + (currentPage === 1 ? ' disabled' : '');
+      prevLi.innerHTML = '<a class="page-link" href="#" data-page="prev" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>';
+      ul.appendChild(prevLi);
+
+      for (let p = 1; p <= totalPages; p++) {
+        const li = document.createElement('li');
+        li.className = 'page-item' + (p === currentPage ? ' active' : '');
+        li.innerHTML = '<a class="page-link" href="#" data-page="' + p + '">' + p + '</a>';
+        ul.appendChild(li);
+      }
+
+      const nextLi = document.createElement('li');
+      nextLi.className = 'page-item' + (currentPage === totalPages ? ' disabled' : '');
+      nextLi.innerHTML = '<a class="page-link" href="#" data-page="next" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>';
+      ul.appendChild(nextLi);
+
+      paginationEl.appendChild(ul);
+
+      ul.addEventListener('click', function(e) {
+        e.preventDefault();
+        const link = e.target.closest('a[data-page]');
+        if (!link || link.closest('.disabled')) return;
+        const page = link.getAttribute('data-page');
+        if (page === 'prev') currentPage = Math.max(1, currentPage - 1);
+        else if (page === 'next') currentPage = Math.min(totalPages, currentPage + 1);
+        else currentPage = parseInt(page, 10);
+        render();
+      });
+    }
+
+    if (filtersEl) {
+      filtersEl.querySelectorAll('li[data-filter]').forEach(function(li) {
+        li.addEventListener('click', function(e) {
+          e.preventDefault();
+          filtersEl.querySelector('.filter-active').classList.remove('filter-active');
+          this.classList.add('filter-active');
+          currentFilter = this.getAttribute('data-filter');
+          currentPage = 1;
+          render();
+        });
+      });
+    }
+
+    render();
+  })();
+
+  /**
    * Init swiper sliders
    */
   function initSwiper() {

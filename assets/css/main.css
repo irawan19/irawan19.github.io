@@ -1677,6 +1677,36 @@ section,
   transform: translateY(0);
 }
 
+/* Portfolio pagination - theme match */
+.portfolio #portfolio-pagination .pagination {
+  gap: 0.25rem;
+}
+
+.portfolio #portfolio-pagination .page-item .page-link {
+  background-color: color-mix(in srgb, var(--surface-color), var(--default-color) 3%);
+  color: var(--default-color);
+  border: 1px solid color-mix(in srgb, var(--surface-color), var(--default-color) 8%);
+  padding: 0.5rem 0.85rem;
+}
+
+.portfolio #portfolio-pagination .page-item .page-link:hover {
+  background-color: color-mix(in srgb, var(--surface-color), var(--default-color) 10%);
+  color: var(--default-color);
+  border-color: color-mix(in srgb, var(--surface-color), var(--default-color) 15%);
+}
+
+.portfolio #portfolio-pagination .page-item.active .page-link {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+}
+
+.portfolio #portfolio-pagination .page-item.disabled .page-link {
+  background-color: color-mix(in srgb, var(--surface-color), var(--default-color) 3%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--surface-color), var(--default-color) 8%);
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1751,11 +1781,18 @@ section,
   }
 }
 
+.services .row:has(.service-card) {
+  align-items: stretch;
+}
+
 .services .service-card {
   padding: 40px 40px 40px 40px;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
   border: 2px solid color-mix(in srgb, var(--accent-color), transparent 90%);
   transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .services .service-card .service-icon {
@@ -1798,6 +1835,7 @@ section,
   color: var(--default-color);
   transition: color 0.3s ease;
   margin-bottom: 0;
+  flex: 1 1 auto;
 }
 
 .services .service-card .card-action {
@@ -2224,6 +2262,48 @@ section,
 
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+}
+
+.contact .pdf-preview-box {
+  background-color: var(--surface-color);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(var(--default-color), 0.08);
+}
+
+.contact .pdf-preview-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .pdf-preview-box p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 1.5rem;
+}
+
+.contact .pdf-preview-wrapper {
+  min-height: 560px;
+}
+
+.contact .pdf-preview-iframe {
+  width: 100%;
+  height: 85vh;
+  min-height: 560px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contact .pdf-preview-box {
+    padding: 1.5rem;
+  }
+  .contact .pdf-preview-wrapper {
+    min-height: 480px;
+  }
+  .contact .pdf-preview-iframe {
+    min-height: 480px;
+    height: 75vh;
+  }
 }
 
 /*--------------------------------------------------------------
