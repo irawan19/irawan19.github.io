@@ -56,12 +56,9 @@
   }
 
   /**
-   * Welcome greeting sound - plays once on first interaction (browser blocks autoplay)
+   * Welcome greeting sound - plays once per page load on first interaction (termasuk saat refresh)
    */
   (function welcomeSound() {
-    var STORAGE_KEY = 'welcomeSoundPlayed';
-    if (localStorage.getItem(STORAGE_KEY)) return;
-
     var base = window.location.href.split('#')[0];
     base = base.substring(0, base.lastIndexOf('/') + 1);
     var audio = new Audio(base + 'assets/sound/welcome.mp3');
@@ -69,11 +66,9 @@
     var played = false;
 
     function playWelcome() {
-      if (played || localStorage.getItem(STORAGE_KEY)) return;
+      if (played) return;
       played = true;
-      audio.play().then(function() {
-        localStorage.setItem(STORAGE_KEY, '1');
-      }).catch(function() {
+      audio.play().catch(function() {
         played = false;
       });
     }
@@ -124,18 +119,23 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Init typed.js
+   * Init typed.js - warna berganti per item: Electric Purple, Magenta, Neon Green, Bright Blue
    */
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
+    var typedColors = ['#ffffff', '#ffffff', '#ffffff', '#ffffff'];
     let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
+    typed_strings = typed_strings.split(',').map(s => s.trim());
+    selectTyped.style.color = typedColors[0];
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000
+      backDelay: 2000,
+      preStringTyped: function(index) {
+        selectTyped.style.color = typedColors[index % typedColors.length];
+      }
     });
   }
 

@@ -69,7 +69,7 @@ body {
 
 /* Hexagon pattern for cards - white lines, subtle */
 :root {
-  --hex-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='81'%3E%3Cdefs%3E%3Cpattern id='cardhex' width='70' height='81' patternUnits='userSpaceOnUse'%3E%3Cpath d='M35 0 L61 20 L61 60 L35 80 L9 60 L9 20 Z' fill='none' stroke='white' stroke-width='0.5' opacity='0.07'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23cardhex)'/%3E%3C/svg%3E");
+  --hex-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='81'%3E%3Cdefs%3E%3Cpattern id='cardhex' width='70' height='81' patternUnits='userSpaceOnUse'%3E%3Cpath d='M35 0 L61 20 L61 60 L35 80 L9 60 L9 20 Z' fill='none' stroke='%2300FFFF' stroke-width='0.5' opacity='0.12'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23cardhex)'/%3E%3C/svg%3E");
 }
 
 /* Hexagon background canvas - behind all content */
@@ -196,7 +196,7 @@ h6 {
   align-items: center;
   justify-content: center;
   background: color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--default-color);
+  color: #ffffff;
   margin: 0 2px;
   border-radius: 50%;
   text-align: center;
@@ -272,7 +272,7 @@ h6 {
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
+  color: #ffffff;
   padding: 15px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
@@ -315,13 +315,13 @@ h6 {
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus {
-  color: var(--nav-hover-color);
+  color: #ffffff;
 }
 
 .navmenu a:hover .navicon,
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
-  color: var(--accent-color);
+  color: #ffffff;
 }
 
 .navmenu .active .toggle-dropdown,
@@ -385,12 +385,18 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
+  color: #00FFFF;
 }
 
 .footer .credits {
   margin-top: 4px;
   font-size: 13px;
   text-align: center;
+  color: #ffffff;
+}
+
+.footer .credits a {
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -438,7 +444,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #00FFFF;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -447,13 +453,13 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: #001a1a;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+  background-color: #00E6FF;
+  color: #001a1a;
 }
 
 .scroll-top.active {
@@ -624,11 +630,11 @@ section,
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 15px;
-  color: var(--heading-color);
+  color: #ffffff;
 }
 
 .hero .hero-text h1 .accent-text {
-  color: var(--accent-color);
+  color: #ffffff;
   position: relative;
 }
 
@@ -639,17 +645,14 @@ section,
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 50%));
+  background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0.5));
 }
 
 .hero .hero-text h2 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 10px;
-  background: linear-gradient(to bottom right, #00FFFF, #00E6FF, #00C6FF);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #00FFFF;
 }
 
 .hero .hero-text .lead {
@@ -726,7 +729,7 @@ section,
   align-items: center;
   justify-content: center;
   background-color: var(--surface-color);
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #ffffff;
   border-radius: 50%;
   font-size: 20px;
   transition: all 0.3s ease;
@@ -947,7 +950,7 @@ section,
 }
 
 .about .profile-content .profession {
-  color: var(--accent-color);
+  color: #ffffff;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -1014,6 +1017,7 @@ section,
   font-weight: 700;
   line-height: 1.3;
   margin: 0;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -1109,7 +1113,7 @@ section,
 .about .details-grid .detail-item .detail-value {
   display: block;
   font-weight: 600;
-  color: var(--heading-color);
+  color: #ffffff;
   font-size: 1rem;
 }
 
@@ -1436,7 +1440,7 @@ section,
 .resume .resume-side h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--heading-color);
+  color: #00FFFF;
   font-weight: 600;
 }
 
@@ -1480,12 +1484,12 @@ section,
 .resume .resume-section h3 {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
-  color: var(--heading-color);
+  color: #00FFFF;
   font-weight: 600;
 }
 
 .resume .resume-section h3 i {
-  color: var(--accent-color);
+  color: #00FFFF;
 }
 
 .resume .resume-section .resume-item {
@@ -1509,7 +1513,7 @@ section,
 .resume .resume-section .resume-item h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: var(--heading-color);
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -1594,7 +1598,7 @@ section,
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
-  color: var(--default-color);
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
   border-radius: 6px;
   background: transparent;
@@ -1605,21 +1609,21 @@ section,
 @media (max-width: 991px) {
   .portfolio .portfolio-filters li {
     padding: 8px 16px;
-    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+    border: 1px solid color-mix(in srgb, #ffffff, transparent 80%);
     border-left-width: 3px;
   }
 }
 
 .portfolio .portfolio-filters li:hover {
-  color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-left-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: #ffffff;
+  background-color: color-mix(in srgb, #ffffff, transparent 90%);
+  border-left-color: color-mix(in srgb, #ffffff, transparent 50%);
 }
 
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-left-color: var(--accent-color);
+  color: #ffffff;
+  background-color: color-mix(in srgb, #ffffff, transparent 90%);
+  border-left-color: #ffffff;
   font-weight: 600;
 }
 
@@ -1756,7 +1760,7 @@ section,
   margin-bottom: 0;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--heading-color);
+  color: #ffffff;
 }
 
 .services .service-header .service-intro .service-heading div {
@@ -1766,7 +1770,7 @@ section,
 
 .services .service-header .service-intro .service-heading span {
   display: block;
-  color: var(--accent-color);
+  color: #ffffff;
 }
 
 @media (max-width: 992px) {
@@ -1859,7 +1863,7 @@ section,
 }
 
 .services .service-card h3 a {
-  color: var(--heading-color);
+  color: #00FFFF;
   transition: color 0.3s ease;
 }
 
@@ -1868,7 +1872,7 @@ section,
 }
 
 .services .service-card h3 a:hover {
-  color: var(--accent-color);
+  color: #00E6FF;
 }
 
 .services .service-card p {
@@ -1932,11 +1936,11 @@ section,
 }
 
 .services .service-card:hover h3 a {
-  color: var(--accent-color);
+  color: #00FFFF;
 }
 
 .services .service-card:hover h3 a:hover {
-  color: var(--accent-color);
+  color: #00E6FF;
 }
 
 .services .service-card:hover p {
@@ -2316,6 +2320,7 @@ section,
 .contact .pdf-preview-box h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .contact .pdf-preview-box p {
