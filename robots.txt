@@ -1,0 +1,8 @@
+# robots.txt for https://irawan19.github.io/
+# Allow all crawlers to index the site (Google, Bing, etc.)
+
+User-agent: *
+Allow: /
+
+# Sitemap location for Google Search Console / Webmaster Tools
+Sitemap: https://irawan19.github.io/sitemap.xml

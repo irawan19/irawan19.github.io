@@ -1622,7 +1622,7 @@ section,
 
 .portfolio .portfolio-wrap .portfolio-info .category {
   display: inline-block;
-  color: var(--accent-color);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1632,7 +1632,7 @@ section,
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: var(--contrast-color);
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -1643,7 +1643,7 @@ section,
 }
 
 .portfolio .portfolio-wrap .portfolio-info .portfolio-links a {
-  color: var(--contrast-color);
+  color: #ffffff;
   width: 40px;
   height: 40px;
   display: flex;
