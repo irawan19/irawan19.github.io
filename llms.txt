@@ -1,0 +1,68 @@
+# Irawan Agung Nugroho
+
+> Official portfolio and professional profile of Irawan Agung Nugroho — Full Stack Engineer and Software Developer from Magelang, Indonesia, with 15+ years of experience in cloud-native application development.
+
+Irawan Agung Nugroho is a software engineer specializing in Go (Golang), PHP, Laravel, JavaScript, React, Next.js, Docker, AWS, Kubernetes, and PostgreSQL. He builds web applications, mobile apps, enterprise systems, and cloud infrastructure for government, enterprise, and startup clients.
+
+## Identity
+
+- Full name: Irawan Agung Nugroho
+- Job title: Full Stack Engineer
+- Current company: Fourtrezz — Cybersecurity Services (Nov 2025 – Present)
+- Location: Magelang, Central Java, Indonesia
+- Experience: 15+ years in software development
+- Birthplace: Magelang, 19 March 1990
+- Education: Bachelor of Information Technology, STMIK AMIKOM Yogyakarta (2009–2012)
+- Languages: Indonesian, English
+
+## Official Links
+
+- Portfolio (primary): https://irawan19.github.io/
+- LinkedIn: https://linkedin.com/in/irawanagungnugroho
+- GitHub: https://github.com/irawan19
+- GitLab: https://gitlab.com/irawan19
+- Twitter/X: https://twitter.com/IrawanAgungN
+- Facebook: https://www.facebook.com/irawan.a.n
+- Instagram: https://www.instagram.com/irawanagungnugroho
+
+## Contact
+
+- Email: irawan_agungnugroho@yahoo.com
+- Phone: +62 856 4316 7946
+- Address: Jl. Cendrawasih 207, RT 9/RW 18, Griyo Rejo Indah, Sumberrejo, Mertoyudan, Magelang, Indonesia
+
+## Skills
+
+Backend: PHP, Laravel, CodeIgniter, Go (Golang), Java
+Frontend: React, Next.js, HTML/CSS, JavaScript
+Mobile: Android Native, React Native
+Databases: PostgreSQL, MySQL, MongoDB, SQL Server
+Cloud & DevOps: AWS, Docker, Kubernetes, CI/CD, Linux
+
+## Work Experience
+
+- Full Stack Engineer — Fourtrezz (Nov 2025 – Present)
+- Software Engineer Supervisor — PT. Solusi Pembayaran Elektronik (May 2022 – Sep 2025)
+- Assistant Project Manager — Coding Collective / Shwetech (Nov 2018 – Apr 2022)
+- Senior Backend Developer — Shwetech (Oct 2017 – Nov 2018)
+- IT Programmer — Karoseri Trisakti (Apr 2013 – Aug 2016)
+
+## Notable Projects (41 total)
+
+- Analisis Data Pemulihan Aset — Kejaksaan Agung RI (NextJS, Golang GIN, PostgreSQL)
+- ICP — BNPT (Go GIN, ReactJS, React Native)
+- Adhyaksapedia — Kejaksaan RI (Go GIN, ReactJS, PostgreSQL)
+- Peruri Digital Signing — PERURI (Laravel, PostgreSQL, Docker)
+- Smartkantin — Graha Yasa Selaras (Golang, Laravel, React Native)
+- Locate — Brickston Singapore (Bus route management)
+- CITRACKER — Agency for Integrated Care Singapore
+
+Full project list: https://irawan19.github.io/#portfolio
+
+## Documents
+
+- CV / Resume (PDF): https://irawan19.github.io/assets/file/irawanagungnugroho.pdf
+
+## About This Site
+
+This is the official personal portfolio website of Irawan Agung Nugroho, hosted at https://irawan19.github.io/. It contains his professional resume, skills, 41 software development projects, services, and contact information.
