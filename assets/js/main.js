@@ -287,6 +287,17 @@
   })();
 
   /**
+   * Portfolio detail links from data-id
+   */
+  document.querySelectorAll('.portfolio-item[data-id]').forEach(function(item) {
+    const id = item.getAttribute('data-id');
+    const detailLink = item.querySelector('.portfolio-links a[title="More Details"]');
+    if (detailLink) {
+      detailLink.href = 'portfolio-details.html?id=' + encodeURIComponent(id);
+    }
+  });
+
+  /**
    * Init swiper sliders
    */
   function initSwiper() {
