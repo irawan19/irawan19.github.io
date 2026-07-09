@@ -8,9 +8,7 @@
   const projectId = params.get('id');
   const project = getPortfolioProject(projectId);
   const baseUrl = 'https://irawan19.github.io';
-  const pageUrl = projectId
-    ? baseUrl + '/portfolio-details.html?id=' + encodeURIComponent(projectId)
-    : baseUrl + '/portfolio-details.html';
+  const pageUrl = baseUrl + '/' + PortfolioUtils.portfolioDetailsUrl(projectId);
 
   const pageTitle = document.querySelector('.page-title h1');
   const breadcrumbCurrent = document.querySelector('.breadcrumbs .current');
@@ -25,16 +23,7 @@
 
   document.title = seoTitle;
 
-  function setMeta(name, content, isProperty) {
-    const attr = isProperty ? 'property' : 'name';
-    let el = document.querySelector('meta[' + attr + '="' + name + '"]');
-    if (!el) {
-      el = document.createElement('meta');
-      el.setAttribute(attr, name);
-      document.head.appendChild(el);
-    }
-    el.setAttribute('content', content);
-  }
+  const setMeta = PortfolioUtils.upsertMeta;
 
   setMeta('description', seoDesc);
   setMeta('keywords', 'Irawan Agung Nugroho, ' + project.title + ', ' + project.stack + ', portfolio, Full Stack Engineer');
@@ -44,13 +33,7 @@
   setMeta('twitter:title', seoTitle);
   setMeta('twitter:description', seoDesc);
 
-  let canonical = document.querySelector('link[rel="canonical"]');
-  if (!canonical) {
-    canonical = document.createElement('link');
-    canonical.rel = 'canonical';
-    document.head.appendChild(canonical);
-  }
-  canonical.href = pageUrl;
+  PortfolioUtils.upsertLink('canonical', pageUrl);
 
   const jsonLdEl = document.getElementById('portfolio-jsonld');
   if (jsonLdEl) {

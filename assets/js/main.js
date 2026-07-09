@@ -188,8 +188,7 @@
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
       filters.addEventListener('click', function() {
-        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-        this.classList.add('filter-active');
+        PortfolioUtils.setActiveFilter(isotopeItem.querySelector('.isotope-filters'), this);
         initIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
@@ -274,8 +273,7 @@
       filtersEl.querySelectorAll('li[data-filter]').forEach(function(li) {
         li.addEventListener('click', function(e) {
           e.preventDefault();
-          filtersEl.querySelector('.filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
+          PortfolioUtils.setActiveFilter(filtersEl, this);
           currentFilter = this.getAttribute('data-filter');
           currentPage = 1;
           render();
@@ -293,7 +291,7 @@
     const id = item.getAttribute('data-id');
     const detailLink = item.querySelector('.portfolio-links a[title="More Details"]');
     if (detailLink) {
-      detailLink.href = 'portfolio-details.html?id=' + encodeURIComponent(id);
+      detailLink.href = PortfolioUtils.portfolioDetailsUrl(id);
     }
   });
 
