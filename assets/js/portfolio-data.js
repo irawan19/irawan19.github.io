@@ -941,5 +941,11 @@ const PORTFOLIO_BY_ID = PORTFOLIO_PROJECTS.reduce(function(map, project) {
 }, {});
 
 function getPortfolioProject(id) {
-  return PORTFOLIO_BY_ID[id] || PORTFOLIO_PROJECTS[0];
+  if (id && Object.prototype.hasOwnProperty.call(PORTFOLIO_BY_ID, id)) {
+    return PORTFOLIO_BY_ID[id];
+  }
+  if (id) {
+    console.warn('Portfolio project not found for id "' + id + '"; showing default project.');
+  }
+  return PORTFOLIO_PROJECTS[0];
 }
