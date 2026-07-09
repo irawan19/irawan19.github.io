@@ -68,8 +68,11 @@
     function playWelcome() {
       if (played) return;
       played = true;
-      audio.play().catch(function() {
+      audio.play().catch(function(err) {
         played = false;
+        if (err && err.name !== 'NotAllowedError') {
+          console.error('Welcome sound playback failed:', err);
+        }
       });
     }
 
@@ -125,18 +128,22 @@
   if (selectTyped) {
     var typedColors = ['#ffffff', '#ffffff', '#ffffff', '#ffffff'];
     let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',').map(s => s.trim());
-    selectTyped.style.color = typedColors[0];
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000,
-      preStringTyped: function(index) {
-        selectTyped.style.color = typedColors[index % typedColors.length];
-      }
-    });
+    if (!typed_strings) {
+      console.error('Typed element is missing the required "data-typed-items" attribute.');
+    } else {
+      typed_strings = typed_strings.split(',').map(s => s.trim());
+      selectTyped.style.color = typedColors[0];
+      new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000,
+        preStringTyped: function(index) {
+          selectTyped.style.color = typedColors[index % typedColors.length];
+        }
+      });
+    }
   }
 
   /**
@@ -302,9 +309,19 @@
    */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
+      const configEl = swiperElement.querySelector(".swiper-config");
+      if (!configEl) {
+        console.error('Swiper config element (.swiper-config) not found.', swiperElement);
+        return;
+      }
+
+      let config;
+      try {
+        config = JSON.parse(configEl.innerHTML.trim());
+      } catch (err) {
+        console.error('Failed to parse Swiper config JSON.', err, swiperElement);
+        return;
+      }
 
       if (swiperElement.classList.contains("swiper-tab")) {
         initSwiperWithCustomPagination(swiperElement, config);

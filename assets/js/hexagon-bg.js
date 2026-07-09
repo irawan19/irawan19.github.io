@@ -7,6 +7,10 @@
   if (!canvas) return;
 
   var ctx = canvas.getContext('2d');
+  if (!ctx) {
+    console.error('Hexagon background: unable to get 2D rendering context.');
+    return;
+  }
   var hexagons = [];
   var time = 0;
   var mouse = { x: undefined, y: undefined };
