@@ -1,0 +1,7 @@
+# Node / test tooling (dev-only; the deployed site is plain static files)
+node_modules/
+coverage/
+npm-debug.log*
+
+# OS files
+.DS_Store
