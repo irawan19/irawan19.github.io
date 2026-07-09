@@ -34,6 +34,12 @@ jobs:
             --exclude='.DS_Store' \
             --exclude='README.md' \
             --exclude='_site' \
+            --exclude='node_modules' \
+            --exclude='coverage' \
+            --exclude='tests' \
+            --exclude='package.json' \
+            --exclude='package-lock.json' \
+            --exclude='.gitignore' \
             ./ _site/
           touch _site/.nojekyll
 
