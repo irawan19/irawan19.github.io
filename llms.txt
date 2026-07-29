@@ -1,18 +1,18 @@
 # Irawan Agung Nugroho
 
-> Official portfolio and professional profile of Irawan Agung Nugroho — Full Stack Engineer and Software Developer from Magelang, Indonesia, with 15+ years of experience in cloud-native application development.
+> Official portfolio and professional profile of Irawan Agung Nugroho — Senior Engineer and FullStack Developer from Magelang, Indonesia, with 15+ years of experience in cloud-native application development.
 
 Irawan Agung Nugroho is a software engineer specializing in Go (Golang), PHP, Laravel, JavaScript, React, Next.js, Docker, AWS, Kubernetes, and PostgreSQL. He builds web applications, mobile apps, enterprise systems, and cloud infrastructure for government, enterprise, and startup clients.
 
 ## Identity
 
 - Full name: Irawan Agung Nugroho
-- Job title: Full Stack Engineer
-- Current company: Fourtrezz — Cybersecurity Services (Nov 2025 – Present)
+- Job title: Senior Engineer
+- Current company: Fourtrezz - Cybersecurity Services (Nov 2025 – Present)
 - Location: Magelang, Central Java, Indonesia
 - Experience: 15+ years in software development
 - Birthplace: Magelang, 19 March 1990
-- Education: Bachelor of Information Technology, STMIK AMIKOM Yogyakarta (2009–2012)
+- Education: Bachelor's degree, Information Technology, STMIK Amikom Yogyakarta (2009–2012, GPA: 3.33, KOMA); Front End Development Certification, freeCodeCamp (2017–Present)
 - Languages: Indonesian, English
 
 ## Official Links
@@ -41,11 +41,14 @@ Cloud & DevOps: AWS, Docker, Kubernetes, CI/CD, Linux
 
 ## Work Experience
 
-- Full Stack Engineer — Fourtrezz (Nov 2025 – Present)
-- Software Engineer Supervisor — PT. Solusi Pembayaran Elektronik (May 2022 – Sep 2025)
-- Assistant Project Manager — Coding Collective / Shwetech (Nov 2018 – Apr 2022)
-- Senior Backend Developer — Shwetech (Oct 2017 – Nov 2018)
+- Senior Engineer — Fourtrezz - Cybersecurity Services (Nov 2025 – Present)
+- Supervisor of Software Engineer — SPE Solution (May 2022 – Sep 2025)
+- Assistant Project Manager — Coding Collective (Nov 2018 – May 2022)
+- Backend Developer — ShweTech (Nov 2018 – Dec 2019)
+- Freelance IT Developer — Zuhaits Agrifintech (Mar 2017 – Oct 2017)
+- Freelance IT Consultant — Jogja Mitra (Aug 2016 – Oct 2017)
 - IT Programmer — Karoseri Trisakti (Apr 2013 – Aug 2016)
+- IT Programmer — PT Arwana Citramulia Tbk (Nov 2012 – Mar 2013)
 
 ## Notable Projects (41 total)
 

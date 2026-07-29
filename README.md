@@ -1,8 +1,8 @@
 # Irawan Agung Nugroho
 
-**Full Stack Engineer** — Cloud-native application development, backend & fullstack
+**Senior Engineer** — Cloud-native application development, backend & fullstack
 
-Adaptable software engineer with a diverse background in IT and data analytics, now specializing in cloud-native application development. Skilled in **Go**, **PHP**, **JavaScript**, **Docker**, **AWS**, and **Kubernetes**, with a goal of leveraging technology to solve complex problems and drive organizational growth.
+Adaptable software engineer with a diverse background in IT and data analytics, now specializing in cloud-native application development. Skilled in **Go**, **PHP**, **Javascript**, **docker**, **AWS**, and **Kubernetes**, with a goal of leveraging technology to solve complex problems and drive organizational growth.
 
 ---
 
@@ -19,7 +19,8 @@ Adaptable software engineer with a diverse background in IT and data analytics, 
 
 ## Education
 
-- **Bachelor of Information Technology** (2009–2012) — STMIK AMIKOM Yogyakarta
+- **Bachelor's degree, Information Technology** (2009–2012) — STMIK Amikom Yogyakarta (GPA: 3.33, KOMA)
+- **Front End Development Certification** (2017–Present) — freeCodeCamp
 
 ---
 
@@ -27,11 +28,14 @@ Adaptable software engineer with a diverse background in IT and data analytics, 
 
 | Period | Role | Company |
 |--------|------|---------|
-| Nov 2025 – Present | Full Stack Engineer | Fourtrezz - Cybersecurity Services |
-| May 2022 – Sep 2025 | Software Engineer Supervisor | PT. Solusi Pembayaran Elektronik |
-| Nov 2018 – Apr 2022 | Assistant Project Manager | Coding Collective (formerly Shwetech) |
-| Oct 2017 – Nov 2018 | Senior Backend Developer | Shwetech |
+| Nov 2025 – Present | Senior Engineer | Fourtrezz - Cybersecurity Services |
+| May 2022 – Sep 2025 | Supervisor of Software Engineer | SPE Solution |
+| Nov 2018 – May 2022 | Assistant Project Manager | Coding Collective |
+| Nov 2018 – Dec 2019 | Backend Developer | ShweTech |
+| Mar 2017 – Oct 2017 | Freelance IT Developer | Zuhaits Agrifintech |
+| Aug 2016 – Oct 2017 | Freelance IT Consultant | Jogja Mitra |
 | Apr 2013 – Aug 2016 | IT Programmer | Karoseri Trisakti |
+| Nov 2012 – Mar 2013 | IT Programmer | PT Arwana Citramulia Tbk |
 
 ---
 

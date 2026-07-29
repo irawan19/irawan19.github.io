@@ -93,10 +93,11 @@
 
   if (swiperWrapper) {
     swiperWrapper.innerHTML = '';
+    var imgUrl = 'assets/img/portfolio/' + project.id + '.png';
     for (let i = 0; i < 3; i++) {
       const slide = document.createElement('div');
       slide.className = 'swiper-slide';
-      slide.innerHTML = '<img src="assets/img/portfolio/default.png" alt="' + project.title + ' by Irawan Agung Nugroho" class="img-fluid" loading="lazy">';
+      slide.innerHTML = '<img src="' + imgUrl + '" alt="' + project.title + ' by Irawan Agung Nugroho" class="img-fluid" loading="lazy">';
       swiperWrapper.appendChild(slide);
     }
   }

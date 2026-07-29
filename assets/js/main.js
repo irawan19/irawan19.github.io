@@ -298,6 +298,22 @@
   });
 
   /**
+   * Set portfolio images from generated PNG files
+   */
+  document.querySelectorAll('.portfolio-item[data-id]').forEach(function(item) {
+    var id = item.getAttribute('data-id');
+    var imgUrl = 'assets/img/portfolio/' + id + '.png';
+    var img = item.querySelector('.portfolio-wrap > img');
+    if (img) {
+      img.src = imgUrl;
+    }
+    var glightLink = item.querySelector('.portfolio-links a.glightbox');
+    if (glightLink) {
+      glightLink.href = imgUrl;
+    }
+  });
+
+  /**
    * Init swiper sliders
    */
   function initSwiper() {

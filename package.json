@@ -28,5 +28,8 @@
       "assets/js/**/*.js"
     ],
     "coverageDirectory": "coverage"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
   }
 }

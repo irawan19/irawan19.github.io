@@ -3,6 +3,149 @@
  */
 const PORTFOLIO_PROJECTS = [
   {
+    "id": "hospire",
+    "title": "HOSPIRE - Hospitality Learning Ecosystem",
+    "category": "Cloud & Enterprise",
+    "categoryDetail": "Hospitality LMS",
+    "client": "HOSPIRE",
+    "date": "Jul 2026 - Present",
+    "role": "Fullstack Developer (Freelance)",
+    "url": "",
+    "stack": "Laravel 12, Vue 3, Tailwind CSS, SeaweedFS, LiveKit, Docker, L5-Swagger",
+    "overview": [
+      "Enterprise-grade Hospitality Learning Management System (LMS) combining program management, learning modules, assessments, certifications, job placements, and payment processing into a unified ecosystem.",
+      "Built with Laravel 12, Vue 3, Tailwind CSS, multi-language support (English & Indonesian), RBAC, real-time communication via LiveKit, SeaweedFS S3-compatible storage, and Docker."
+    ],
+    "features": [
+      "Program Management",
+      "Learning Modules & Assessments",
+      "Certifications & Job Placements",
+      "Payment Processing",
+      "Multi-Language Content",
+      "Role-Based Access Control",
+      "Real-Time Communication (LiveKit)",
+      "API Documentation (L5-Swagger)"
+    ]
+  },
+  {
+    "id": "indotani-store",
+    "title": "IndotaniPOS",
+    "category": "Cloud & Enterprise",
+    "categoryDetail": "AI-Powered POS & Business Intelligence",
+    "client": "Indotani Store",
+    "date": "May 2026 - Jun 2026",
+    "role": "Fullstack Developer (Freelance)",
+    "url": "",
+    "stack": "Golang (Gin), Next.js, TypeScript, PostgreSQL, Redis, SeaweedFS, Nginx, Docker",
+    "overview": [
+      "Enterprise-grade Point of Sale (POS) platform for retail stores, distributors, and agricultural businesses with AI-powered business insights for data-driven decision making.",
+      "Built with Golang (Gin), Next.js, TypeScript, PostgreSQL, Redis, SeaweedFS, Nginx, and Docker with RESTful APIs for POS, inventory, finance, and reporting modules."
+    ],
+    "features": [
+      "Multi-branch POS",
+      "Product, Category, Supplier & Customer Management",
+      "Inventory & Stock Monitoring",
+      "Sales & Purchase Management",
+      "Cash Flow & Financial Dashboard",
+      "Accounts Receivable Management",
+      "Loyalty Points & Membership",
+      "AI Insight Dashboard",
+      "Sales Trend Analytics",
+      "Best-Selling Product Analysis",
+      "Low Stock & Restock Recommendations",
+      "Business Performance Reporting",
+      "Role-Based Access Control (RBAC)"
+    ]
+  },
+  {
+    "id": "bontings-pos",
+    "title": "Bontings POS",
+    "category": "Web Application",
+    "categoryDetail": "Multi-branch Retail POS",
+    "client": "Bontings",
+    "date": "Feb 2026 - May 2026",
+    "role": "Fullstack Developer (Freelance)",
+    "url": "",
+    "stack": "Laravel, MySQL, Bootstrap",
+    "overview": [
+      "Web-based retail management and Point of Sale (POS) system for multi-branch souvenir shops and retail businesses, unifying back-office operations and front-line cashier workflows in a single Laravel application.",
+      "Five main areas: Configuration, Master Data, Transactions, Reports, and Activity Logs. POS module provides a fast single-page cashier interface with thermal receipt printing and WhatsApp notifications."
+    ],
+    "features": [
+      "Multi-branch Management",
+      "POS Single-Page Cashier Interface",
+      "Product, Stock & Inventory Management",
+      "Inter-branch Stock Transfers",
+      "FIFO-based Cost of Goods Sold (HPP)",
+      "Sales, Purchases & Cancellations",
+      "Cash Withdrawals & Receivables/Payables",
+      "VAT Configuration & Agent Commissions",
+      "Thermal Receipt Printing (58/70/80mm)",
+      "WhatsApp Customer Notifications",
+      "Sales, Cashier & Stock Reports",
+      "Activity Logs & Audit Trails"
+    ]
+  },
+  {
+    "id": "genesis-financial-system",
+    "title": "Genesis Financial System",
+    "category": "Cloud & Enterprise",
+    "categoryDetail": "Financial Management & Distribution",
+    "client": "Genesis",
+    "date": "Apr 2026",
+    "role": "Fullstack Developer (Freelance)",
+    "url": "",
+    "stack": "React 18, Next.js 16, TypeScript, TailwindCSS, Go (Gin), PostgreSQL, Redis, SeaweedFS, Nginx, Docker, JWT",
+    "overview": [
+      "Financial management and distribution application with multi-role management, POS, inventory, financial tracking, ledger & wallet system, multi-level distribution, and AI assistant.",
+      "Built with React 18, Next.js 16, TypeScript, Go (Gin), PostgreSQL, Redis, SeaweedFS, Nginx, Docker, and JWT with microservices architecture."
+    ],
+    "features": [
+      "Multi-Role Management (Owner, Developer, Manager, Member, Reseller, Supplier)",
+      "Dashboard Analytics & POS System",
+      "Inventory & Financial Tracking",
+      "Ledger & Wallet System",
+      "Multi-Level Distribution & Commission Tracking",
+      "Contribution Calculation & Audit Trail",
+      "Budget Management & Payment Processing",
+      "Invoice Generation & Multi-Currency",
+      "Tax Management & 2FA Security",
+      "Branch Management & Real-time Updates",
+      "Workflow Automation & Integration APIs",
+      "Data Analytics & AI Assistant"
+    ]
+  },
+  {
+    "id": "gendhis-prima-sentosa",
+    "title": "Gendhis Prima Sentosa",
+    "category": "Web Application",
+    "categoryDetail": "Multi-Tenant Training & Consulting Platform",
+    "client": "Gendhis Prima Sentosa",
+    "date": "Jan 2026 - Feb 2026",
+    "role": "Fullstack Developer (Freelance)",
+    "url": "",
+    "stack": "Laravel 12, MySQL, Bootstrap",
+    "overview": [
+      "Laravel 12 web application for training and consulting companies with admin dashboard to manage multiple tenants (companies), each with its own public website served by domain.",
+      "Dashboard features include events & calendar, attendance, training budget with proof upload, invoices with PDF/Word export, training reports, form templates, consultation forms, certificates with QR code, employees & access levels, syllabus, and multi-tenant public sites."
+    ],
+    "features": [
+      "Multi-Tenant Company Management",
+      "Events & Calendar",
+      "Attendance (Absen) & Quick-Absen",
+      "Training Budget with Proof Upload & Excel/PDF Export",
+      "Invoices with PDF/Word Export",
+      "Training & Invoice Reports",
+      "Form Templates & Responses",
+      "Consultation Form (Public Submit)",
+      "Certificates with QR Code",
+      "Employees & Access Levels",
+      "Syllabus & Categories",
+      "Public Gallery (Fancybox Lightbox)",
+      "Multi-Tenant Public Sites by Domain"
+    ]
+  },
+  {
     "id": "analisis-data-pemulihan-aset",
     "title": "Analisis Data Pemulihan Aset (Kejaksaan Agung)",
     "category": "Cloud & Enterprise",
@@ -33,11 +176,11 @@ const PORTFOLIO_PROJECTS = [
   },
   {
     "id": "icp-bnpt",
-    "title": "ICP (BNPT)",
+    "title": "ICP (Intelligent Collaboration Platform)",
     "category": "Cloud & Enterprise",
     "categoryDetail": "Enterprise Collaboration Platform",
     "client": "BNPT",
-    "date": "Aug 2024 - Present",
+    "date": "Oct 2025 - Present",
     "role": "Project Manager (Freelance)",
     "url": "https://icp.sysdev.id",
     "stack": "Go GIN, ReactJS, PostgreSQL, Docker, MinIO, React Native, CI/CD",
@@ -268,13 +411,13 @@ const PORTFOLIO_PROJECTS = [
   },
   {
     "id": "hlwintlive",
-    "title": "Emusrenbangtan / Hlwintlive",
+    "title": "Hlwintlive",
     "category": "Mobile & Fullstack",
     "categoryDetail": "Live Streaming Platform",
     "client": "Shwetech",
     "date": "Dec 2018 - Dec 2019",
     "role": "Senior Backend Developer (Shwetech)",
-    "url": "",
+    "url": "http://hlwintlive.com/",
     "stack": "Laravel, Bootstrap, MySQL, React Native, Wowza",
     "overview": [
       "Hlwint is a live streaming video and social video chat application. Website application used to assist marketing in promoting the application.",
@@ -317,7 +460,7 @@ const PORTFOLIO_PROJECTS = [
     "category": "Cloud & Enterprise",
     "categoryDetail": "Bus Route Management",
     "client": "Brickston Coach Singapore",
-    "date": "Apr 2020 - Jul 2020",
+    "date": "Oct 2019 - Feb 2020",
     "role": "Assistant Project Manager (Coding Collective)",
     "url": "https://www.brickston.com.sg/locateapp/login",
     "stack": "Mobile App, CMS Dashboard",
@@ -340,7 +483,7 @@ const PORTFOLIO_PROJECTS = [
     "category": "Cloud & Enterprise",
     "categoryDetail": "Inventory Tracking System",
     "client": "Agency for Integrated Care Singapore",
-    "date": "Apr 2020 - Jul 2020",
+    "date": "Nov 2019",
     "role": "Assistant Project Manager (Coding Collective)",
     "url": "https://aicapps.com/login",
     "stack": "Web Application",
@@ -447,6 +590,29 @@ const PORTFOLIO_PROJECTS = [
       "Budget Recap Calculation",
       "Fund Allocation",
       "Offline Data Sync via API"
+    ]
+  },
+  {
+    "id": "emusrenbangtan-upgrade",
+    "title": "Emusrenbangtan Kementerian Pertanian (Upgrade)",
+    "category": "Cloud & Enterprise",
+    "categoryDetail": "Budget Planning System Upgrade",
+    "client": "Kementerian Pertanian",
+    "date": "Apr 2020 - Jul 2020",
+    "role": "Fullstack Programmer (Freelance)",
+    "url": "http://147.139.174.200/",
+    "stack": "Laravel, Bootstrap, MySQL",
+    "overview": [
+      "Upgrade of Emusrenbangtan with online discussions in 34 provinces of Indonesia, real-time data from discussions to reports, and tracking data from eproposal, central design, and discussion to produce budget fund allocation data for each province's districts.",
+      "Built with Laravel, Bootstrap, and MySQL."
+    ],
+    "features": [
+      "Online Discussions in 34 Provinces",
+      "Real-Time Discussion Data to Reports",
+      "Eproposal Tracking",
+      "Central Design Tracking",
+      "Discussion Tracking",
+      "Budget Fund Allocation per District"
     ]
   },
   {
@@ -676,6 +842,27 @@ const PORTFOLIO_PROJECTS = [
     ]
   },
   {
+    "id": "pringgodani",
+    "title": "Pringgodani Company Profile",
+    "category": "Web Application",
+    "categoryDetail": "Company Profile",
+    "client": "Pringgodani",
+    "date": "Apr 2017 - Aug 2017",
+    "role": "Fullstack Programmer (Freelance)",
+    "url": "http://www.zuhaits.com/pringgodani",
+    "stack": "PHP 7.0.6, CodeIgniter 3, MySQL, Bootstrap",
+    "overview": [
+      "Company profile information system used as promotional website for Pringgodani company.",
+      "Built using PHP v7.0.6, CodeIgniter v3, MySQL, Bootstrap, jQuery, and JavaScript."
+    ],
+    "features": [
+      "Company Profile Pages",
+      "Promotional Content",
+      "Admin Content Management",
+      "Responsive Design"
+    ]
+  },
+  {
     "id": "personal-financial",
     "title": "Personal Financial Application",
     "category": "Web Application",
@@ -706,7 +893,7 @@ const PORTFOLIO_PROJECTS = [
     "client": "Educational",
     "date": "Mar 2017 - Apr 2017",
     "role": "Fullstack Programmer (Freelance)",
-    "url": "",
+    "url": "https://www.itrass.com/",
     "stack": "PHP 7.0.6, CodeIgniter 3, MySQL, Bootstrap",
     "overview": [
       "Trading Simulation System for share learners in university, seminar, and general users.",
@@ -931,6 +1118,133 @@ const PORTFOLIO_PROJECTS = [
       "Reservation Management",
       "Product Purchasing",
       "Sales Income Tracking"
+    ]
+  },
+  {
+    "id": "aplikasi-simpan-pinjam",
+    "title": "Aplikasi Simpan Pinjam",
+    "category": "Web Application",
+    "categoryDetail": "Employee Savings & Loan",
+    "client": "PT Sentra Solusindo WebCenter",
+    "date": "May 2011",
+    "role": "Fullstack Programmer",
+    "url": "",
+    "stack": "PHP, MySQL",
+    "overview": [
+      "Application for employee savings and loans management at PT Sentra Solusindo WebCenter.",
+      "Built using PHP and MySQL."
+    ],
+    "features": [
+      "Employee Savings Management",
+      "Loan Management",
+      "Repayment Tracking",
+      "Account Balance Reports"
+    ]
+  },
+  {
+    "id": "yogyakarta-museum",
+    "title": "Yogyakarta Museum Management Information System",
+    "category": "Web Application",
+    "categoryDetail": "Museum Information System",
+    "client": "Academic Project",
+    "date": "2011",
+    "role": "Fullstack Programmer (STMIK AMIKOM Yogyakarta)",
+    "url": "",
+    "stack": "PHP, MySQL",
+    "overview": [
+      "Museum information system for managing museum collections and visitor information.",
+      "Built using PHP and MySQL as a thesis project."
+    ],
+    "features": [
+      "Collection Management",
+      "Visitor Information",
+      "Museum Catalog",
+      "Search & Browse"
+    ]
+  },
+  {
+    "id": "yogyakarta-tourism",
+    "title": "Yogyakarta Tourism Information System",
+    "category": "Web Application",
+    "categoryDetail": "Tourism Information Portal",
+    "client": "Academic Project",
+    "date": "2011",
+    "role": "Fullstack Programmer (STMIK AMIKOM Yogyakarta)",
+    "url": "",
+    "stack": "PHP, MySQL",
+    "overview": [
+      "Yogyakarta tourism information system with agendas, news, tourism, culture, association, and gallery of various tourism spots in Yogyakarta.",
+      "Built using PHP and MySQL as a thesis project."
+    ],
+    "features": [
+      "Agendas & News",
+      "Tourism Spots",
+      "Culture Information",
+      "Association Directory",
+      "Photo Gallery"
+    ]
+  },
+  {
+    "id": "cool-box",
+    "title": "Cool Box",
+    "category": "Web Application",
+    "categoryDetail": "Hardware Project",
+    "client": "Academic Project",
+    "date": "2010",
+    "role": "Hardware Developer",
+    "url": "",
+    "stack": "Peltier Cooler, Dry Battery",
+    "overview": [
+      "Portable drink cooler built using peltier cooler (processor cooler typically used for overclocking) and dry battery motor as power source.",
+      "Designed as a portable, easily transportable drink cooling device."
+    ],
+    "features": [
+      "Peltier Cooler Technology",
+      "Portable Design",
+      "Battery Powered",
+      "Drink Cooling"
+    ]
+  },
+  {
+    "id": "music-studio-rental",
+    "title": "Music Studio Rental Information System",
+    "category": "Web Application",
+    "categoryDetail": "Desktop Rental Application",
+    "client": "Academic Project",
+    "date": "2010",
+    "role": "Desktop Developer",
+    "url": "",
+    "stack": "Java",
+    "overview": [
+      "Java-based desktop application for managing music studio rental operations.",
+      "Built using Java as an academic project."
+    ],
+    "features": [
+      "Studio Rental Management",
+      "Booking & Scheduling",
+      "Rental Fee Calculation",
+      "Studio Availability Tracking"
+    ]
+  },
+  {
+    "id": "hotel-reservation-info-system",
+    "title": "Web-Based Information System For Media Information and Hotel Reservation",
+    "category": "Web Application",
+    "categoryDetail": "Hotel Media & Reservation",
+    "client": "Academic Project",
+    "date": "2010",
+    "role": "Fullstack Programmer",
+    "url": "",
+    "stack": "PHP, MySQL",
+    "overview": [
+      "Web-based information system for hotel media information and reservation management.",
+      "Built using PHP and MySQL as an academic project."
+    ],
+    "features": [
+      "Hotel Media Information",
+      "Room Reservation",
+      "Booking Management",
+      "Hotel Profile"
     ]
   }
 ];
