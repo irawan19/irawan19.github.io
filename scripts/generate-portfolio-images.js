@@ -142,12 +142,15 @@ function generateSVG(project) {
   var featureCount = project.features ? project.features.length : 0;
 
   var titleLines = wrapText(project.title, 28);
-  var titleY = 250;
-  var titleLineHeight = 26;
-  var titleStartY = titleY - ((titleLines.length - 1) * titleLineHeight) / 2;
+  var titleLineHeight = 24;
+  var titleZoneTop = 175;
+  var titleZoneBottom = 235;
+  var titleZoneHeight = titleZoneBottom - titleZoneTop;
+  var titleBlockHeight = titleLines.length * titleLineHeight;
+  var titleStartY = titleZoneTop + (titleZoneHeight - titleBlockHeight) / 2 + titleLineHeight * 0.75;
 
   var titleSvg = titleLines.map(function (line, i) {
-    return '<text x="300" y="' + (titleStartY + i * titleLineHeight) + '" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">' + escapeXml(line) + '</text>';
+    return '<text x="300" y="' + Math.round(titleStartY + i * titleLineHeight) + '" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">' + escapeXml(line) + '</text>';
   }).join('');
 
   var hexPattern = '';
@@ -177,8 +180,8 @@ function generateSVG(project) {
     for (var b = 0; b < badgesToShow; b++) {
       var bx = startX + b * (badgeWidth + badgeGap);
       var featureLabel = project.features[b].length > 18 ? project.features[b].substring(0, 16) + '\u2026' : project.features[b];
-      featureBadges += '<rect x="' + bx + '" y="345" width="' + badgeWidth + '" height="24" rx="12" fill="rgba(255,255,255,0.12)" stroke="' + theme.accent + '" stroke-width="1" stroke-opacity="0.4"/>' +
-        '<text x="' + (bx + badgeWidth / 2) + '" y="361" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">' + escapeXml(featureLabel) + '</text>';
+      featureBadges += '<rect x="' + bx + '" y="300" width="' + badgeWidth + '" height="22" rx="11" fill="rgba(255,255,255,0.12)" stroke="' + theme.accent + '" stroke-width="1" stroke-opacity="0.4"/>' +
+        '<text x="' + (bx + badgeWidth / 2) + '" y="315" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">' + escapeXml(featureLabel) + '</text>';
     }
   }
 
@@ -189,7 +192,7 @@ function generateSVG(project) {
     '<stop offset="50%" stop-color="' + theme.gradient[1] + '"/>' +
     '<stop offset="100%" stop-color="' + theme.gradient[2] + '"/>' +
     '</linearGradient>' +
-    '<radialGradient id="glow" cx="50%" cy="35%" r="50%">' +
+    '<radialGradient id="glow" cx="50%" cy="30%" r="45%">' +
     '<stop offset="0%" stop-color="' + theme.glow + '"/>' +
     '<stop offset="100%" stop-color="transparent"/>' +
     '</radialGradient>' +
@@ -198,17 +201,18 @@ function generateSVG(project) {
     '<rect width="600" height="400" fill="url(#glow)"/>' +
     '<g opacity="0.8">' + hexPattern + '</g>' +
     '<rect x="0" y="0" width="600" height="400" fill="rgba(0,0,0,0.15)"/>' +
-    '<circle cx="300" cy="130" r="50" fill="rgba(255,255,255,0.08)" stroke="' + theme.accent + '" stroke-width="1.5" stroke-opacity="0.5"/>' +
-    '<g transform="translate(278,108) scale(1.85)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">' +
+    '<circle cx="300" cy="80" r="42" fill="rgba(255,255,255,0.08)" stroke="' + theme.accent + '" stroke-width="1.5" stroke-opacity="0.5"/>' +
+    '<g transform="translate(281,61) scale(1.6)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">' +
     iconPath +
     '</g>' +
-    '<rect x="250" y="195" width="100" height="28" rx="14" fill="rgba(255,255,255,0.1)" stroke="' + theme.accent + '" stroke-width="1" stroke-opacity="0.4"/>' +
-    '<text x="300" y="213" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="' + theme.accent + '">' + initials + '</text>' +
+    '<rect x="255" y="132" width="90" height="24" rx="12" fill="rgba(255,255,255,0.1)" stroke="' + theme.accent + '" stroke-width="1" stroke-opacity="0.4"/>' +
+    '<text x="300" y="148" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" fill="' + theme.accent + '">' + initials + '</text>' +
+    '<line x1="180" y1="168" x2="420" y2="168" stroke="' + theme.accent + '" stroke-width="1" stroke-opacity="0.25"/>' +
     titleSvg +
-    '<text x="300" y="300" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.6)">' + catEsc + '</text>' +
-    '<text x="300" y="320" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">' + dateEsc + ' \u2022 ' + escapeXml(String(featureCount)) + ' features</text>' +
+    '<text x="300" y="255" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.6)">' + catEsc + '</text>' +
+    '<text x="300" y="275" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">' + dateEsc + ' \u2022 ' + escapeXml(String(featureCount)) + ' features</text>' +
     featureBadges +
-    '<text x="300" y="385" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">' + stackEsc + '</text>' +
+    '<text x="300" y="370" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">' + stackEsc + '</text>' +
     '</svg>';
 }
 
