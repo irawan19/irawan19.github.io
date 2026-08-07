@@ -30,6 +30,7 @@
     "coverageDirectory": "coverage"
   },
   "dependencies": {
+    "pdf-parse": "^2.4.5",
     "sharp": "^0.35.3"
   }
 }

@@ -9,22 +9,26 @@ const PORTFOLIO_PROJECTS = [
     "categoryDetail": "Hospitality LMS",
     "client": "HOSPIRE",
     "date": "Jul 2026 - Present",
-    "role": "Fullstack Developer (Freelance)",
-    "url": "",
-    "stack": "Laravel 12, Vue 3, Tailwind CSS, SeaweedFS, LiveKit, Docker, L5-Swagger",
+    "role": "Fullstack Developer",
+    "url": "https://hospire.id/",
+    "stack": "Laravel 12, Vue 3, Tailwind CSS, SeaweedFS, LiveKit, Docker, L5-Swagger, PostgreSQL",
     "overview": [
-      "Enterprise-grade Hospitality Learning Management System (LMS) combining program management, learning modules, assessments, certifications, job placements, and payment processing into a unified ecosystem.",
-      "Built with Laravel 12, Vue 3, Tailwind CSS, multi-language support (English & Indonesian), RBAC, real-time communication via LiveKit, SeaweedFS S3-compatible storage, and Docker."
+      "HOSPIRE is an enterprise-grade Hospitality Learning Management System (LMS) built with Laravel 12, Vue 3, and Tailwind CSS. It provides a comprehensive platform for hospitality education, combining program management, learning modules, assessments, certifications, job placements, and payment processing into a unified ecosystem.",
+      "The system supports multi-language content (English and Indonesian), role-based access control, real-time communication via LiveKit, file storage via SeaweedFS S3-compatible storage, and API documentation through L5-Swagger. Designed with clean architecture, modular feature isolation, and scalable infrastructure using Docker, HOSPIRE delivers a seamless experience for students, instructors, and administrators across the entire hospitality learning journey\u2014from enrollment and training to certification and global job placement."
     ],
     "features": [
       "Program Management",
       "Learning Modules & Assessments",
       "Certifications & Job Placements",
       "Payment Processing",
-      "Multi-Language Content",
+      "Multi-Language Content (English & Indonesian)",
       "Role-Based Access Control",
       "Real-Time Communication (LiveKit)",
-      "API Documentation (L5-Swagger)"
+      "SeaweedFS S3-Compatible File Storage",
+      "API Documentation (L5-Swagger)",
+      "Clean Architecture & Modular Feature Isolation",
+      "Docker Containerized Deployment",
+      "Landing Page & Dashboard Admin"
     ]
   },
   {
@@ -34,15 +38,15 @@ const PORTFOLIO_PROJECTS = [
     "categoryDetail": "AI-Powered POS & Business Intelligence",
     "client": "Indotani Store",
     "date": "May 2026 - Jun 2026",
-    "role": "Fullstack Developer (Freelance)",
+    "role": "Fullstack Developer",
     "url": "",
-    "stack": "Golang (Gin), Next.js, TypeScript, PostgreSQL, Redis, SeaweedFS, Nginx, Docker",
+    "stack": "Golang (Gin), Next.js, TypeScript, PostgreSQL, Redis, SeaweedFS, Nginx, Docker, REST API, Tailwind CSS, Git",
     "overview": [
-      "Enterprise-grade Point of Sale (POS) platform for retail stores, distributors, and agricultural businesses with AI-powered business insights for data-driven decision making.",
-      "Built with Golang (Gin), Next.js, TypeScript, PostgreSQL, Redis, SeaweedFS, Nginx, and Docker with RESTful APIs for POS, inventory, finance, and reporting modules."
+      "IndotaniPOS is a modern, enterprise-grade Point of Sale (POS) platform designed for retail stores, distributors, and agricultural businesses. The platform goes beyond transaction management by providing AI-powered business insights that help business owners make data-driven decisions.",
+      "Every business generates data, but most of it is never used. Sales are recorded, inventory is updated, and receivables are stored\u2014yet business owners still wonder why sales drop, what to restock, who hasn't paid, or whether cash flow is healthy. IndotaniPOS transforms daily transactions into actionable business insights for smarter decisions. Built with Golang (Gin), Next.js, TypeScript, PostgreSQL, Redis, SeaweedFS, Nginx, and Docker."
     ],
     "features": [
-      "Multi-branch POS",
+      "Multi-branch Point of Sale (POS)",
       "Product, Category, Supplier & Customer Management",
       "Inventory & Stock Monitoring",
       "Sales & Purchase Management",
@@ -54,7 +58,10 @@ const PORTFOLIO_PROJECTS = [
       "Best-Selling Product Analysis",
       "Low Stock & Restock Recommendations",
       "Business Performance Reporting",
-      "Role-Based Access Control (RBAC)"
+      "Role-Based Access Control (RBAC)",
+      "Real-time Analytics Dashboards",
+      "SeaweedFS Distributed File Storage",
+      "Redis Caching & Performance Optimization"
     ]
   },
   {
@@ -181,25 +188,28 @@ const PORTFOLIO_PROJECTS = [
     "categoryDetail": "Enterprise Collaboration Platform",
     "client": "BNPT",
     "date": "Oct 2025 - Present",
-    "role": "Project Manager (Freelance)",
+    "role": "Fullstack Engineer",
     "url": "https://icp.sysdev.id",
-    "stack": "Go GIN, ReactJS, PostgreSQL, Docker, MinIO, React Native, CI/CD",
+    "stack": "Go (Gin), Next.js, React Native (Eyre), PostgreSQL, MinIO, Redis, JWT/Keycloak SSO, LiveKit, BigBlueButton, OnlyOffice, Docker, Nginx",
     "overview": [
-      "Organization task and project management platform enabling task assignment, priority setting, task division, short communication, and work report monitoring.",
-      "Built with Go GIN, ReactJS, PostgreSQL, Docker, MinIO for storage bucket, React Native, and CI/CD."
+      "Enterprise collaboration platform that unifies real-time communication (1:1 chat, groups, private channels), voice/video calls (LiveKit P2P and BigBlueButton conferences), project and task management, file drive, calendar and meeting room booking, webmail, polling, social feed, document collaboration (OnlyOffice), push-to-talk, notifications, and activity dashboards in one integrated ecosystem.",
+      "Built with a Go REST API, real-time WebSocket service, Next.js web frontend, and Android/iOS mobile app (React Native / Eyre), backed by PostgreSQL, MinIO, Redis, JWT/Keycloak SSO, RBAC, chat encryption (AES transport + optional E2E), and Docker/Nginx deployment."
     ],
     "features": [
-      "Dashboard & Feeds",
-      "Tasks & Projects",
-      "Document Collaboration",
-      "Company Structure",
-      "Webmail",
-      "Chat & Calls",
-      "Private Channel",
-      "Calendar",
-      "Meeting Room",
-      "My Drive",
-      "Log Activity"
+      "1:1 Chat, Groups & Private Channels",
+      "Voice/Video Calls (LiveKit P2P)",
+      "BigBlueButton Conferences",
+      "Project & Task Management",
+      "File Drive (MinIO Storage)",
+      "Calendar & Meeting Room Booking",
+      "Webmail Integration",
+      "Polling & Social Feed",
+      "Document Collaboration (OnlyOffice)",
+      "Push-to-Talk & Notifications",
+      "Activity Dashboards",
+      "JWT/Keycloak SSO & RBAC",
+      "Chat Encryption (AES + Optional E2E)",
+      "Android/iOS Mobile App (React Native / Eyre)"
     ]
   },
   {
